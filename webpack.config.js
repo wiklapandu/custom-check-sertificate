@@ -1,5 +1,5 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
-
+/* eslint no-undef: 'off' */
 const path = require('path');
 const { ProgressPlugin } = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
