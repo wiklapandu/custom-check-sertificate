@@ -27,14 +27,14 @@ class Enqueue
             "frontend_style",
             PLUGIN_URL . "/assets/dist/css/style.min.css",
             [],
-            filemtime(PLUGIN_DIR . "/assets/dist/css/style.min.css")
+            'auto'
         );
 
         wp_enqueue_script(
             "vendor_script",
             PLUGIN_URL . "/assets/dist/js/vendor.min.js",
             ["jquery"],
-            filemtime(PLUGIN_DIR . "/assets/dist/js/vendor.min.js"),
+            'auto',
             true
         );
 
@@ -42,7 +42,7 @@ class Enqueue
             "frontend_script",
             PLUGIN_URL . "/assets/dist/js/script.min.js",
             ["jquery"],
-            filemtime(PLUGIN_DIR . "/assets/dist/js/script.min.js"),
+            'auto',
             true
         );
 

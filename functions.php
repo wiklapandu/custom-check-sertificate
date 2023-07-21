@@ -58,7 +58,7 @@ class Class_Functions
             'file'     => __FILE__,
             'basename' => plugin_basename(__FILE__),
             'path'     => plugin_dir_path(__FILE__),
-            'url'      => plugins_url('', __FILE__),
+            'url'      => plugin_dir_url(__FILE__),
         );
 
         // constant
