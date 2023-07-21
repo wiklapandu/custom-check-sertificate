@@ -2,6 +2,37 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
   \********************************************************************************************************************************************************/
 @charset "UTF-8";
+html:root {
+  --theme-color: $theme-colors;
+}
+
+.button {
+  display: block;
+  color: #fff;
+  background-color: #0a993c;
+  padding: 1rem 0.5rem;
+  border-radius: 3px;
+  border: 2px solid #0a993c;
+  width: 100%;
+}
+.button:hover {
+  border: 2px solid #088133;
+  background-color: #088133;
+}
+
+.form-control-custom {
+  border: 2px solid #555;
+  display: block;
+  color: #555;
+  font-size: 16px;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  width: 100%;
+}
+.form-control-custom:focus {
+  border: 2px solid #0a993c;
+}
+
 /*!
  * Bootstrap Reboot v5.3.0 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

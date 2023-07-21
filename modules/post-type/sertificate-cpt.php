@@ -16,8 +16,8 @@ class SertificateCPT extends RegisterCPT
 
     public function create_cpt()
     {
-        $title = 'Certificatee';
-        $slug_cpt = 'certificatee-cpt';
+        $title = 'Certificate';
+        $slug_cpt = 'certificate-cpt';
         $args = [
             'menu_position' => 15,
             'supports' => array('title'),

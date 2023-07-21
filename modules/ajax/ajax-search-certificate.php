@@ -33,7 +33,7 @@ class AjaxSearchCertificate extends SanitizeAndValidate{
 	private function _response()
 	{
 		$query_args = [
-			'post_type' => 'certificatee-cpt',
+			'post_type' => 'certificate-cpt',
 			'posts_per_page' => -1,
 		];
 

@@ -2,8 +2,8 @@ const configuration = {
     sass: ['./src/scss/style.scss'],
     js: ['./src/js/script.js', './src/js/vendor.js'],
     browserSync: {
-        proxy: "http://playground.test/",
-        host: "playground.test",
+        proxy: "http://hdioi.test/",
+        host: "hdioi.test",
         watchTask: true,
         open: "external",
         files: [
