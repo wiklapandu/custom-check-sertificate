@@ -7,7 +7,7 @@
  * Version:     0.0.1
  * Author:      Wikla Pandu
  * Author URI:  https://github.com/wiklapandu
- * Requires PHP: 8.0.*
+ * Requires PHP: 7.4.*
  *
  */
 
