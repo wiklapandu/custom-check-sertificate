@@ -1,0 +1,7 @@
+$theme_color: #0a993c;
+$theme_dark: #555;
+$text-color-light: #fff;
+
+html:root {
+    --theme-color: $theme-colors;
+}

@@ -1,0 +1,26 @@
+.button {
+    display: block;
+    color: #fff;
+    background-color: $theme_color;
+    padding: 1rem .5rem;
+    border-radius: 3px;
+    border: 2px solid $theme_color;
+    width: 100%;
+    &:hover {
+        border: 2px solid darken($color: $theme_color, $amount: 5%);
+        background-color: darken($color: $theme_color, $amount: 5%);
+    }
+}
+
+.form-control-custom {
+    border: 2px solid $theme_dark;
+    display: block;
+    color: $theme_dark;
+    font-size: 16px;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    width: 100%;
+    &:focus {
+        border: 2px solid $theme_color;
+    }
+}
