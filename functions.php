@@ -58,10 +58,12 @@ class Class_Functions
             'file'     => __FILE__,
             'basename' => plugin_basename(__FILE__),
             'path'     => plugin_dir_path(__FILE__),
-            'url'      => plugin_dir_url(__FILE__),
+            'url'      => plugins_url('/', __FILE__),
         );
 
         // constant
+        define('IN_LOCAL', true);
+
         define('BASE_URL', get_site_url());
         define('BASE_DIR', rtrim(ABSPATH, '/'));
 
@@ -83,6 +85,7 @@ class Class_Functions
 
         $this->autoloadScript(
             [
+                MODULES_DIR . '/helper/autoload.php',
                 MODULES_DIR . '/*/autoload.php',
                 __DIR__ . '/setup/autoload.php'
             ]
