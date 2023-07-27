@@ -1,6 +1,8 @@
 <?php
     global $post;
     $the_post = CertificateModel::get($post);
+
+    wp_nav_menu();
 ?>
 <section>
     <div class="w-100 pt-80 black-layer pb-70 opc85 position-relative">

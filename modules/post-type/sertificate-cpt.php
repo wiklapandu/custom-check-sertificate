@@ -14,7 +14,7 @@ class SertificateCPT extends RegisterCPT
     {
         $this->post_type = 'certificate-cpt';
         add_action('init', [$this, 'create_cpt']);
-        add_filter('template_include', [$this, 'loop_certificate_cpt']);
+        // add_filter('template_include', [$this, 'loop_certificate_cpt']);
     }
 
     public function create_cpt()
@@ -33,7 +33,7 @@ class SertificateCPT extends RegisterCPT
     public function loop_certificate_cpt($template)
     {
         if(is_singular($this->post_type)) {
-            return require __DIR__ . './template-part/single.php';
+            return require __DIR__ . '/template-part/single.php';
         }
         return $template;
     }
