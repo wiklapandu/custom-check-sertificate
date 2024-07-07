@@ -25,22 +25,23 @@ class Enqueue
     {
         wp_enqueue_style(
             "frontend_style",
-            PLUGIN_URL . "/assets/dist/css/style.min.css",
+            !(IN_LOCAL) ? home_url("/wp-includes/custom-check-sertificate/css/style.min.css") : PLUGIN_URL . '/assets/dist/css/style.min.css',
             [],
-            'auto'
+            '1.0',
+            'all'
         );
 
         wp_enqueue_script(
-            "vendor_script",
-            PLUGIN_URL . "/assets/dist/js/vendor.min.js",
-            ["jquery"],
+            "vendors_script",
+            !(IN_LOCAL) ? home_url("/wp-includes/custom-check-sertificate/js/vendor.min.js") : PLUGIN_URL . '/assets/dist/js/vendor.min.js',
+            [],
             'auto',
             true
         );
 
         wp_enqueue_script(
             "frontend_script",
-            PLUGIN_URL . "/assets/dist/js/script.min.js",
+            !(IN_LOCAL) ? home_url("/wp-includes/custom-check-sertificate/js/script.min.js") : PLUGIN_URL . '/assets/dist/js/script.min.js',
             ["jquery"],
             'auto',
             true

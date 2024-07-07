@@ -27,32 +27,7 @@ import swal from 'sweetalert2';
             .post_search_certificate(input)
             .done((res) => {
                 const post = res.data.post;
-                const products = post.products.map((prod) => prod.text)?.join('<br>');
-                $content.html(`
-                    <div class="js-content_certificate">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">${post.title}</h5>
-                                <div class="row mb-1">
-                                    <div class="col-6 fw-bold">Certificate No. : </div>
-                                    <div class="col-6">${post.certificate_number}</div>
-                                </div>
-                                <div class="row mb-1">
-                                    <div class="col-6 fw-bold">Company Name : </div>
-                                    <div class="col-6">${post.company_name}</div>
-                                </div>
-                                <div class="row mb-1">
-                                    <div class="col-6 fw-bold">Valid Until : </div>
-                                    <div class="col-6">${post.valid_until}</div>
-                                </div>
-                                <div className="row mb-1">
-                                    <div class="col-6 fw-bold">Products : </div>
-                                    <div class="col-6">${products}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `);
+                location.href = post.permalink;
             }).catch((res) => {
                 const status_code = res.status;
                 swal.fire({
